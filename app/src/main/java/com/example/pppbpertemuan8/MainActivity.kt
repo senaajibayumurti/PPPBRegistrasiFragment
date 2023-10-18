@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        title = "Dashboard"
+        supportActionBar?.hide()
+
         var binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
