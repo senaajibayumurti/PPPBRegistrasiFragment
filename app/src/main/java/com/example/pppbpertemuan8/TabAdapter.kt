@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class TabAdapter (activity: AppCompatActivity) : FragmentStateAdapter(activity){
-    val page = arrayOf(HomeFragment(), MaterialFragment(), QuizFragment())
+    val page = arrayOf(HomeFragment(), QuizFragment())
     override fun getItemCount(): Int {
         return page.size
     }
