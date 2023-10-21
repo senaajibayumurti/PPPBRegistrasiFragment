@@ -18,22 +18,13 @@ class LoginFragment : Fragment() {
         val bundle = arguments
         val username2 = bundle?.getString("username")
         val password2 = bundle?.getString("password")
-        val un = "Username is"
-        val pw = "Password is"
-        val cr = "Credentials are"
+        val wrong = "Please Fill with the Correct Credentials"
 
         with(binding){
             buttonLogIn.setOnClickListener {
-                if (editTextUsernameLogIn.text.toString() != username2 &&
+                if (editTextUsernameLogIn.text.toString() != username2 ||
                     editTextPasswordLogIn.text.toString() != password2){
-                    credentialIncorrectToast(cr)
-                } else if (editTextUsernameLogIn.text.toString() != username2 ||
-                    editTextPasswordLogIn.text.toString() != password2){
-                    if (editTextUsernameLogIn.text.toString() != username2){
-                        credentialIncorrectToast(un)
-                    } else if (editTextPasswordLogIn.text.toString() != password2){
-                        credentialIncorrectToast(pw)
-                    }
+                        credentialIncorrectToast(wrong)
                 } else {
                     val intent = Intent(requireContext(), WelcomeActivity::class.java)
                     startActivity(intent)
