@@ -29,7 +29,7 @@
 
         <item name="android:font">@font/poppins_light</item>
         <!-- Customize your theme here. -->
-        <item name="actionBarSize">100dp</item>
+        <item name="actionBarSize">48dp</item>
     </style>
 
     <!--Custom Rounded Button-->

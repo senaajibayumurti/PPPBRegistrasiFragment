@@ -28,41 +28,17 @@ class MainActivity : AppCompatActivity() {
             TabLayoutMediator(tabLayout, viewPager){
                 tab, position ->
                 tab.text = when(position){
-                    0 -> "Home"
-                    1 -> "Material"
-                    2 -> "Quiz"
+                    0 -> "Register"
+                    1 -> "Log In"
                     else -> ""
                 }
             }.attach()
         }
     }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_option, menu)
-        return true
+    fun toLoginPage(){
+        viewPager2.setCurrentItem(1, true)
     }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when(item.itemId){
-            R.id.action_home ->{
-
-                Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
-                viewPager2.setCurrentItem(0)
-                true
-            }
-            R.id.action_material ->{
-
-                Toast.makeText(this, "Material", Toast.LENGTH_SHORT).show()
-                viewPager2.setCurrentItem(1)
-                true
-            }
-            R.id.action_quiz ->{
-
-                Toast.makeText(this, "Quiz", Toast.LENGTH_SHORT).show()
-                viewPager2.setCurrentItem(2)
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
+    fun toSignInPage(){
+        viewPager2.setCurrentItem(0, true)
     }
 }

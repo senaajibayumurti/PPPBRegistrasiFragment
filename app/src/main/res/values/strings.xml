@@ -5,6 +5,12 @@
     <string name="hyperlink_logIn">
         <u>Log In</u>
     </string>
+    <string name="hyperlink_signIn">
+        <u>Register</u>
+    </string>
+    <string name="hyperlink_forgotpassword">
+        <u>Forgot Password?</u>
+    </string>
     <string name="hyperlink_terms">
         <u>Terms</u>
     </string>
