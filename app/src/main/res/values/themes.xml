@@ -27,9 +27,16 @@
         <item name="android:statusBarColor">@color/purple_2</item>
         <item name="android:textColorPrimary">@color/white</item>
 
-        <item name="android:font">@font/poppins_light</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
         <!-- Customize your theme here. -->
         <item name="actionBarSize">48dp</item>
+    </style>
+    <!--Custom Font-->
+    <style name="customFontBold" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+    <style name="customFontLight" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:fontFamily">@font/poppins_light</item>
     </style>
 
     <!--Custom Rounded Button-->

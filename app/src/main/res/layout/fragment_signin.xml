@@ -33,6 +33,7 @@
             style="@style/customEditText"
 
             android:id="@+id/editText_username"
+            android:fontFamily="@font/poppins_light"
             android:inputType="text"
             android:hint="Username" />
         <androidx.appcompat.widget.AppCompatEditText
@@ -42,6 +43,7 @@
             style="@style/customEditText"
 
             android:id="@+id/editText_email"
+            android:fontFamily="@font/poppins_light"
             android:inputType="textEmailAddress"
             android:hint="E-Mail" />`
         <androidx.appcompat.widget.AppCompatEditText
@@ -51,6 +53,7 @@
             style="@style/customEditText"
 
             android:id="@+id/editText_phone"
+            android:fontFamily="@font/poppins_light"
             android:inputType="number"
             android:hint="Phone Number" />
         <com.google.android.material.textfield.TextInputLayout
@@ -68,6 +71,7 @@
                 style="@style/customEditText"
 
                 android:id="@+id/editText_password"
+                android:fontFamily="@font/poppins_light"
                 android:inputType="textPassword"
                 android:hint="Password" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -90,27 +94,31 @@
                 android:layout_height="wrap_content"
 
                 android:text="By checking the box you agree to our "
-                android:textSize="10sp"/>
+                android:fontFamily="@font/poppins_light"
+                android:textSize="9sp"/>
             <TextView
                 style="@style/customTextViewHyperlinkText"
                 android:layout_width="wrap_content"
-
                 android:layout_height="wrap_content"
+
                 android:text="@string/hyperlink_terms"
-                android:textSize="10sp"/>
+                android:fontFamily="@font/poppins_light"
+                android:textSize="9sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
                 android:text=" and "
-                android:textSize="10sp"/>
+                android:fontFamily="@font/poppins_light"
+                android:textSize="9sp"/>
             <TextView
                 style="@style/customTextViewHyperlinkText"
                 android:layout_width="wrap_content"
-
                 android:layout_height="wrap_content"
+
                 android:text="@string/hyperlink_condition"
-                android:textSize="10sp"/>
+                android:fontFamily="@font/poppins_light"
+                android:textSize="9sp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -147,14 +155,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="Already Have an Account? " />
+                android:text="Already Have an Account? "
+                android:fontFamily="@font/poppins_light"/>
 
             <TextView
                 style="@style/customTextViewHyperlinkText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="@string/hyperlink_logIn" />
+                android:text="@string/hyperlink_logIn"
+                android:fontFamily="@font/poppins_light"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
