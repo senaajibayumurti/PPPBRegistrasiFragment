@@ -2,20 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:title="Home"
-        android:id="@+id/action_home"
-        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Quit"
+        android:id="@+id/action_quit"
+        android:icon="@drawable/round_last_page_24"
         app:showAsAction="always"     />
-    <item
-        android:title="Material"
-        android:id="@+id/action_material"
-        android:icon="@drawable/ic_baseline_menu_book_24"
-        app:showAsAction="never"
-        android:orderInCategory="2"/>
-    <item
-        android:title="Quiz"
-        android:id="@+id/action_quiz"
-        android:icon="@drawable/ic_baseline_list_alt_24"
-        app:showAsAction="never"
-        android:orderInCategory="1"/>
 </menu>
