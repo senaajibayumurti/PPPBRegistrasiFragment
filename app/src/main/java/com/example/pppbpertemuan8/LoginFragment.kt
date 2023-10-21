@@ -18,16 +18,15 @@ class LoginFragment : Fragment() {
         val bundle = arguments
         val username2 = bundle?.getString("username")
         val password2 = bundle?.getString("password")
+        val un = "Username"
+        val pw = "Password"
 
         with(binding){
             buttonLogIn.setOnClickListener {
-                if (editTextUsernameLogIn.text.toString() != username2 ||
-                    editTextPasswordLogIn.text.toString() != password2){
-                    Toast.makeText(
-                        requireContext(),
-                        "Please Fill with the Correct Credentials",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                if (editTextUsernameLogIn.text.toString() != username2){
+                    credentialIncorrectToast(un)
+                } else if (editTextPasswordLogIn.text.toString() != password2){
+                    credentialIncorrectToast(pw)
                 } else {
                     val intent = Intent(requireContext(), WelcomeActivity::class.java)
                     startActivity(intent)
@@ -35,5 +34,12 @@ class LoginFragment : Fragment() {
             }
         }
         return binding.root
+    }
+    fun credentialIncorrectToast(credential:String){
+        Toast.makeText(
+            requireContext(),
+            "${credential} is incorrect",
+            Toast.LENGTH_SHORT
+        ).show()
     }
 }
