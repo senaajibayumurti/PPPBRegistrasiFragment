@@ -58,7 +58,7 @@ class SigninFragment : Fragment() {
                     mainActivity.toLoginPage()
 
                     makeText(requireContext(),
-                        "Lanjut Logiiin",
+                        "You Are Registered!",
                         Toast.LENGTH_SHORT
                     ).show()
                 }

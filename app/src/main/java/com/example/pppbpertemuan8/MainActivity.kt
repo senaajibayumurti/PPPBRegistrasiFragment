@@ -38,7 +38,4 @@ class MainActivity : AppCompatActivity() {
     fun toLoginPage(){
         viewPager2.setCurrentItem(1, true)
     }
-    fun toSignInPage(){
-        viewPager2.setCurrentItem(0, true)
-    }
 }
