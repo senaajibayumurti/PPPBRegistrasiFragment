@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:paddingVertical="54dp"
     android:paddingHorizontal="32dp"
-    tools:context=".HomeFragment">
+    tools:context=".SigninFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,9 +20,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <TextView
+            style="@style/customTextViewTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/customTextViewTitle"
+            android:layout_marginBottom="24dp"
 
             android:text="Register"
             />
@@ -43,7 +44,7 @@
 
             android:id="@+id/editText_email"
             android:inputType="textEmailAddress"
-            android:hint="E-Mail" />
+            android:hint="E-Mail" />`
         <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -58,7 +59,8 @@
             android:layout_height="48dp"
             app:passwordToggleEnabled="true"
             app:boxStrokeWidth="0dp"
-            app:boxStrokeWidthFocused="0dp">
+            app:boxStrokeWidthFocused="0dp"
+            app:hintEnabled="false">
             <androidx.appcompat.widget.AppCompatEditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -70,42 +72,86 @@
                 android:inputType="textPassword"
                 android:hint="Password" />
         </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:id="@+id/link_tnc_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="By checking the box you agree to our "
+                android:textSize="10sp"/>
+            <TextView
+                style="@style/customTextViewHyperlinkText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="@string/hyperlink_terms"
+                android:textSize="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text=" and "
+                android:textSize="10sp"/>
+            <TextView
+                style="@style/customTextViewHyperlinkText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="@string/hyperlink_condition"
+                android:textSize="10sp"/>
+        </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/linear_signIn_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
+        android:layout_marginTop="88dp"
+
         android:orientation="vertical"
-
-        android:id="@+id/linear_signIn_button"
-
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/customRoundedButton"
+        app:layout_constraintTop_toBottomOf="@id/linear_signIn_credentials">
 
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_signIn"
+            style="@style/customRoundedButton"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
             android:text="CUSTOM ROUNDED BUTTON" />
+
         <LinearLayout
+            android:id="@+id/link_haveAnccount_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center_horizontal"
 
-            android:id="@+id/link_haveAnccount_text">
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:text="Already Have an Account? "/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:text="Already Have an Account? " />
 
+            <TextView
                 style="@style/customTextViewHyperlinkText"
-                android:text="@string/hyperlink_logIn"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/hyperlink_logIn" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

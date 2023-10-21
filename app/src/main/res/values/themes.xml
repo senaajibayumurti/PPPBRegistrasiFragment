@@ -29,6 +29,7 @@
 
         <item name="android:font">@font/poppins_light</item>
         <!-- Customize your theme here. -->
+        <item name="actionBarSize">100dp</item>
     </style>
 
     <!--Custom Rounded Button-->
@@ -41,6 +42,7 @@
     <style name="customEditText" parent="Widget.AppCompat.EditText">
         <item name="android:background">@drawable/custom_edittext</item>
         <item name="android:textColor">@color/grey_2</item>
+        <item name="android:paddingHorizontal">16dp</item>
     </style>
 
     <!--For Title-->

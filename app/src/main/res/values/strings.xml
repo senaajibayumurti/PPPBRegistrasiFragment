@@ -5,4 +5,11 @@
     <string name="hyperlink_logIn">
         <u>Log In</u>
     </string>
+    <string name="hyperlink_terms">
+        <u>Terms</u>
+    </string>
+    <string name="hyperlink_condition">
+        <u>Condition</u>
+    </string>
+
 </resources>
